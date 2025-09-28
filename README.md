@@ -10,12 +10,6 @@ Cricbuzz LiveStats is a Streamlit-based dashboard + ETL pipeline that:
 Cricbuzz-LiveStats/
 │── app.py                # Main entry point for Streamlit app
 │── requirements.txt       # Python dependencies
-│── test-env.py            # Test environment setup
-│── .env                   # Environment variables (API keys, DB credentials)
-│
-├── data/                  # (Optional) Data dumps, backups
-├── docs/                  # Documentation
-│    └── README.md
 ├── notebooks/             # Jupyter notebooks for exploration
 ├── pages/                 # Streamlit multipage app
 │    ├── home.py
@@ -23,8 +17,6 @@ Cricbuzz-LiveStats/
 │    ├── top_stats.py
 │    ├── sql_queries.py
 │    ├── crud_operations.py
-│    ├── insert_query.py
-│    └── etl_load.py
 ├── utils/                 # Utility scripts
 │    ├── create_schema.py
 │    └── test_mysql_conn.py
@@ -36,7 +28,6 @@ Cricbuzz-LiveStats/
 - SQLAlchemy + PyMySQL → MySQL database connection
 - Requests → API integration
 - Pandas → Data transformation
-- dotenv → Environment variable management
 - phpMyAdmin (optional) → GUI for MySQL database management
 
 ⚙️ Setup Instructions
