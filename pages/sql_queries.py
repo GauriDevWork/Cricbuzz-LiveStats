@@ -27,14 +27,19 @@ col1, col2 = st.columns([1.4, 8])
 
 with col1:
     st.markdown("## 🏏 Cricbuzz")
-    if st.button("🏠 Home"): nav_to("pages/home.py")
-    if st.button("📡 Live Matches"): nav_to("pages/live_matches.py")
-    if st.button("📊 Top Stats"): nav_to("pages/top_stats.py")
-    if st.button("🧾 SQL Analytics"): nav_to("pages/sql_queries.py")
-    if st.button("✏️ CRUD"): nav_to("pages/crud_operations.py")
+    if st.button("🏠 Home"):
+        nav_to("pages/home.py")
+    if st.button("📡 Live Matches"):
+        nav_to("pages/live_matches.py")
+    if st.button("📊 Top Stats"):
+        nav_to("pages/top_stats.py")
+    if st.button("🧾 SQL Analytics"):
+        nav_to("pages/sql_queries.py")
+    if st.button("✏️ CRUD"):
+        nav_to("pages/crud_operations.py")
     st.markdown("---")
     st.caption("Quick links")
-    st.markdown("- [Project docs](#)")
+    st.markdown("- [Project docs](https://docs.google.com/document/d/1tV9bz0rtE41Ia9CvM_Z5ISGmojxZ_wDm/edit?usp=sharing&ouid=117739931704852783987&rtpof=true&sd=true)")
 
 with col2:
     st.title("Cricket SQL Analytics (25 Queries)")

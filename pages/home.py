@@ -68,11 +68,9 @@ with col2:
     - **Top Stats** → Analyze batting/bowling statistics  
     - **SQL Queries** → Run predefined and custom queries  
     - **CRUD Operations** → Insert, update, and delete records  
-    - **ETL Load** → Load API data into the database  
 
     ### 📄 Documentation & Folder Structure
     You can view the detailed documentation and folder structure here:  
-    👉 [Project Documentation](docs/README.md)
-
+    👉 [Project Documentation](https://docs.google.com/document/d/1tV9bz0rtE41Ia9CvM_Z5ISGmojxZ_wDm/edit?usp=sharing&ouid=117739931704852783987&rtpof=true&sd=true)
 
     """)

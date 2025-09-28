@@ -55,14 +55,14 @@ with col1:
         nav_to("pages/crud_operations.py")
     st.markdown("---")
     st.caption("Quick links")
-    st.markdown("- [Project docs](#)")
+    st.markdown("- [Project docs](https://docs.google.com/document/d/1tV9bz0rtE41Ia9CvM_Z5ISGmojxZ_wDm/edit?usp=sharing&ouid=117739931704852783987&rtpof=true&sd=true)")
 
 with col2:
     # -----------------------
     # API config (env friendly)
     # -----------------------
     API_HOST = "cricbuzz-cricket.p.rapidapi.com"
-    API_KEY = "72d9f8fec5mshfc0f2f47123393ep150dedjsn98f5405906fe"
+    API_KEY = "61e0315fa8msh334f66010769b4ep1c6915jsn6ba00378fac4"
     BASE = f"https://{API_HOST}"
     HEADERS = {"x-rapidapi-host": API_HOST, "x-rapidapi-key": API_KEY}
 

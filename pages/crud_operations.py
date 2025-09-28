@@ -193,28 +193,28 @@ def fetch_page(table, cols, page=1, page_size=25):
         q = text(f"SELECT id, {cols_sql} FROM `{table.name}` ORDER BY id DESC LIMIT :lim OFFSET :off")
         df = pd.read_sql(q, conn, params={"lim": page_size, "off": offset})
     return df
-
+def nav_to(page_name: str):
+    st.switch_page(page_name)
 # ----------------- Page layout -----------------
 left, main = st.columns([1.4, 8])
 with left:
     st.markdown("## 🏏 Cricbuzz")
     if st.button("🏠 Home"):
-        try: st.switch_page("pages/home.py")
-        except: pass
+        nav_to("pages/home.py")
     if st.button("📡 Live Matches"):
-        try: st.switch_page("pages/live_matches.py")
-        except: pass
+        nav_to("pages/live_matches.py")
     if st.button("📊 Top Stats"):
-        try: st.switch_page("pages/top_stats.py")
-        except: pass
+        nav_to("pages/top_stats.py")
+    if st.button("🧾 SQL Analytics"):
+        nav_to("pages/sql_queries.py")
     if st.button("✏️ CRUD"):
-        try: st.switch_page("pages/crud_operations.py")
-        except: pass
+        nav_to("pages/crud_operations.py")
     st.markdown("---")
     st.caption("Quick links")
+    st.markdown("- [Project docs](https://docs.google.com/document/d/1tV9bz0rtE41Ia9CvM_Z5ISGmojxZ_wDm/edit?usp=sharing&ouid=117739931704852783987&rtpof=true&sd=true)")
 
 with main:
-    st.title("Players & Match Stats — CRUD (Stable Final)")
+    st.title("Players & Match Stats — CRUD")
 
     # show flash if present & not expired
     clear_flash_if_expired()
