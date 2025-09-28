@@ -40,7 +40,7 @@ with col1:
         nav_to("pages/crud_operations.py")
     st.markdown("---")
     st.caption("Quick links")
-    st.markdown("- [Project docs](#)")
+    st.markdown("- [Project docs](https://docs.google.com/document/d/1tV9bz0rtE41Ia9CvM_Z5ISGmojxZ_wDm/edit?usp=sharing&ouid=117739931704852783987&rtpof=true&sd=true)")
 
 with col2:
     st.title("🏏 Cricbuzz LiveStats Dashboard")
@@ -73,5 +73,6 @@ with col2:
     ### 📄 Documentation & Folder Structure
     You can view the detailed documentation and folder structure here:  
     👉 [Project Documentation](docs/README.md)
+
 
     """)
